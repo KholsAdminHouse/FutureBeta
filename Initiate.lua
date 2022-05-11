@@ -19,7 +19,7 @@ local function requesturl(url, bypass)
     if isfile(url) then 
         return readfile(url)
     end
-    local repourl = bypass and "https://raw.githubusercontent.com/joeengo/" or "https://raw.githubusercontent.com/KholsAdminHouse/FutureBeta/main/"
+    local repourl = bypass and "https://raw.githubusercontent.com/KholsAdminHouse/" or "https://raw.githubusercontent.com/KholsAdminHouse/FutureBeta/main/"
     local url = url:gsub("Future/", "")
     local req = requestfunc({
         Url = repourl..url,
