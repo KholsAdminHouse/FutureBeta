@@ -905,6 +905,21 @@ do
 end
 
 
+do 
+    local Invisible = {["Enabled"] = false}
+    Invisible = GuiLibrary["Objects"]["ExploitsWindow"]["API"].CreateOptionsButton({
+        ["Name"] = "Invisiblity",
+        ["Function"] = function(callback) 
+            if callback then 
+				print(callback)
+            else
+                print(callback)
+            end
+        end,
+    })
+end
+
+
 
 --// misc window
 
