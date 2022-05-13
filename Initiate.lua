@@ -20,7 +20,7 @@ local function requesturl(url, bypass)
         return readfile(url)
     end
     local repourl = bypass and "https://raw.githubusercontent.com/KholsAdminHouse/" or "https://raw.githubusercontent.com/KholsAdminHouse/FutureBeta/main/"
-    local url = url:gsub("Future/", "")
+    local url = url:gsub("FutureBeta/", "")
     local req = requestfunc({
         Url = repourl..url,
         Method = "GET"
@@ -130,7 +130,7 @@ end
 local function getscript(id) 
     local id = id or shared.FuturePlaceId or game.PlaceId
     id = tostring(id)
-    local req = requesturl("Future/scripts/"..id..".lua")
+    local req = requesturl("FutureBeta/scripts/"..id..".lua")
     if type(req) == "string" then
         return loadstring(req)()
     else
