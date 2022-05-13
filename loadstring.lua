@@ -3,4 +3,4 @@ if shared.FutureDeveloper then
     return
 end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/Future/main/Initiate.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KholsAdminHouse/FutureBeta/main/Initiate.lua"))()
