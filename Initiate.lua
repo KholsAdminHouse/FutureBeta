@@ -29,7 +29,7 @@ local function requesturl(url, bypass)
     return req.Body
 end 
 
-local GuiLibrary = loadstring(requesturl("Future/GuiLibrary.lua"))()
+local GuiLibrary = loadstring(requesturl("FutureBeta/GuiLibrary.lua"))()
 shared.Future.GuiLibrary = GuiLibrary
 local getcustomasset = --[[getsynasset or getcustomasset or]] GuiLibrary["getRobloxAsset"]
 GuiLibrary["LoadOnlyGuiConfig"]()
